@@ -23,7 +23,7 @@ public class CustomerDto implements Dto {
     @Max(100)
     private int discountRate;
 
-    CustomerDto(String name, String email, LocalDate birthday, int discountRate) {
+    public CustomerDto(String name, String email, LocalDate birthday, int discountRate) {
         this.name = name;
         this.email = email;
         this.birthday = birthday;
