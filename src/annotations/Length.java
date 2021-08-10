@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.LOCAL_VARIABLE, ElementType.METHOD})
+@Target(ElementType.FIELD)
 public @interface Length {
     int min();
     int max();

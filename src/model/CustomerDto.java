@@ -9,7 +9,7 @@ import java.time.LocalDate;
  *
  * @author suzy
  */
-public class CustomerDto implements Dto {
+public class CustomerDto {
     @Length(min = 2, max = 30)
     private String name;
 
@@ -30,7 +30,7 @@ public class CustomerDto implements Dto {
         this.discountRate = discountRate;
     }
 
-    @Override
+
     public String getName() {
         return name;
     }
@@ -39,7 +39,7 @@ public class CustomerDto implements Dto {
         this.name = name;
     }
 
-    @Override
+
     public String getEmail() {
         return email;
     }
@@ -48,7 +48,7 @@ public class CustomerDto implements Dto {
         this.email = email;
     }
 
-    @Override
+
     public LocalDate getBirthday() {
         return birthday;
     }
@@ -57,7 +57,7 @@ public class CustomerDto implements Dto {
         this.birthday = birthday;
     }
 
-    @Override
+
     public int getDiscountRate() {
         return discountRate;
     }

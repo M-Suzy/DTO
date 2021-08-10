@@ -13,11 +13,11 @@ public class PrintValidationErrors {
     public static void logValidationErrors(List<ValidationError> validationErrors){
         if(!validationErrors.isEmpty()){
             for(ValidationError error: validationErrors){
-                System.out.println(error.getErrorMessage());
+                System.out.println(error.getErrorMessage()+'\n');
             }
         }
         else {
-            System.out.println("No errors in DTO. Validation is successful.");
+            System.out.println("No errors in DTO. Validation is successful.\n");
         }
     }
 }

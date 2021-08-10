@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.METHOD, ElementType.LOCAL_VARIABLE})
+@Target(ElementType.FIELD)
 public @interface Adulthood {
     String message() default "Age should be at least 18!";
 }

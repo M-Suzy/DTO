@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.LOCAL_VARIABLE, ElementType.METHOD})
+@Target(ElementType.FIELD)
 public @interface Min {
     int value();
     String message() default "Too short!";
